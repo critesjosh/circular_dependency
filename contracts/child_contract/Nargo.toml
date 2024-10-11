@@ -1,0 +1,10 @@
+[package]
+name = "child_contract"
+authors = [""]
+compiler_version = ">=0.25.0"
+type = "contract"
+
+[dependencies]
+aztec = { git = "https://github.com/AztecProtocol/aztec-packages/", tag = "aztec-packages-v0.57.0", directory = "noir-projects/aztec-nr/aztec" }
+parent_contract = { path = "../parent_contract" }
+value_note  = { git = "https://github.com/AztecProtocol/aztec-packages/", tag = "aztec-packages-v0.57.0", directory = "noir-projects/aztec-nr/value-note" }
